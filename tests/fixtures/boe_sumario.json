@@ -1,0 +1,9 @@
+{"status": {"code": "200"}, "data": {"sumario": {"diario": [{"seccion": [
+ {"codigo": "4", "nombre": "IV. Administración de Justicia", "departamento": [
+  {"codigo": "J1", "nombre": "JUZGADOS DE LO MERCANTIL", "epigrafe": [
+   {"nombre": "ALICANTE", "item": [
+    {"identificador": "BOE-B-2026-40001", "titulo": "Declaración de concurso de acreedores de PROMOCIONES LEVANTE SUR SL", "url_pdf": {"texto": "https://www.boe.es/boe/dias/2026/09/25/pdfs/BOE-B-2026-40001.pdf"}}]},
+   {"nombre": "MADRID", "item": [
+    {"identificador": "BOE-B-2026-40002", "titulo": "Concurso consecutivo de TRANSPORTES GARCIA SL", "url_pdf": {"texto": "https://www.boe.es/boe/dias/2026/09/25/pdfs/BOE-B-2026-40002.pdf"}}]}]},
+  {"codigo": "J2", "nombre": "JUZGADOS DE PRIMERA INSTANCIA", "epigrafe": [
+   {"nombre": "SEVILLA", "item": [{"identificador": "BOE-B-2026-40003", "titulo": "Edicto de notificación", "url_pdf": {"texto": "x"}}]}]}]}]}]}}}

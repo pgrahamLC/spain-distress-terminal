@@ -1,0 +1,8 @@
+{"status": {"code": "200"}, "data": {"sumario": {"diario": [{"seccion": [
+ {"codigo": "C", "nombre": "SECCIÓN SEGUNDA - Anuncios y avisos legales", "apartado": [
+  {"nombre": "DISOLUCIÓN DE EMPRESAS", "item": [
+   {"identificador": "BORME-C-2026-9001", "titulo": "RESIDENCIAL COSTA TROPICAL SL", "url_pdf": {"texto": "https://www.boe.es/borme/dias/2026/09/25/pdfs/BORME-C-2026-9001.pdf"}}]},
+  {"nombre": "LIQUIDACIÓN DE EMPRESAS", "item": [
+   {"identificador": "BORME-C-2026-9002", "titulo": "PANADERIA HERMANOS RUIZ SL", "url_pdf": {"texto": "https://www.boe.es/borme/dias/2026/09/25/pdfs/BORME-C-2026-9002.pdf"}}]},
+  {"nombre": "CONVOCATORIAS DE JUNTAS", "item": [
+   {"identificador": "BORME-C-2026-9003", "titulo": "INMOBILIARIA NORTE SA", "url_pdf": {"texto": "x"}}]}]}]}]}}}

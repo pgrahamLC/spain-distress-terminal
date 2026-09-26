@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spain Distress Terminal</title>
+<style>
+:root{--g:#F3F5F4;--p:#fff;--i:#15212A;--m:#5A6A72;--l:#DCE3E1;--a:#0F5E66;--c:#B3261E;--cs:#F7DEDB;--w:#8A6100;--ws:#F5EACB;--o:#2E6E4A;--os:#DCEEE2}
+@media (prefers-color-scheme:dark){:root{--g:#0F1619;--p:#162126;--i:#E6EDEB;--m:#93A4A9;--l:#26353B;--a:#5FC0C4;--c:#F08A80;--cs:#3A1E1C;--w:#E6C25F;--ws:#352C14;--o:#7CCB9C;--os:#18332A}}
+body{margin:0;background:var(--g);color:var(--i);font:15px/1.5 system-ui,sans-serif;padding:24px 16px}
+main{max-width:1180px;margin:auto;display:grid;gap:20px}h1{margin:0}
+.muted{color:var(--m)}.card{background:var(--p);border:1px solid var(--l);border-radius:6px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:8px 10px;border-bottom:1px solid var(--l);text-align:left;vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--m)}td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.s{padding:2px 7px;border-radius:3px;font-weight:600}.hi{background:var(--cs);color:var(--c)}.md{background:var(--ws);color:var(--w)}.lo{background:var(--os);color:var(--o)}
+.f{font-size:12px;color:var(--m)}a{color:var(--a)}
+</style></head><body><main>
+<h1>Spain Distress Terminal</h1><p class="muted" id="st">Loading…</p>
+<div class="card"><table><thead><tr><th>Score</th><th>Lot</th><th>Valor subasta</th><th>Est. market</th><th>Expected clear</th><th>Closes</th><th>Flags</th></tr></thead><tbody id="lots"></tbody></table></div>
+<h2>Real-estate insolvencies</h2><div class="card"><table><thead><tr><th>Date</th><th>Company</th><th>Act</th><th>Where</th></tr></thead><tbody id="ins"></tbody></table></div>
+</main><script>
+const e=n=>n==null?"–":"€"+Math.round(n).toLocaleString("en-GB");
+const cls=s=>s==null?"":s>=70?"hi":s>=40?"md":"lo";
+fetch("latest.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
+document.getElementById("st").textContent=`Updated ${d.generated} · ${d.lots.length} lots · ${d.insolvencies_total} insolvency notices`;
+document.getElementById("lots").innerHTML=d.lots.map(r=>`<tr>
+<td><span class="s ${cls(r.score)}">${r.score??"–"}</span></td>
+<td><a href="${r.source_url}" target="_blank" rel="noopener">${r.boe_id}</a><br>${r.address}, ${r.municipality}<br><span class="f">${r.m2?r.m2+" m²":""} ${r.procedure||""}</span></td>
+<td class="n">${e(r.valor_subasta)}</td><td class="n">${e(r.market_value)}</td><td class="n">${e(r.expected_clear)}</td>
+<td class="n">${r.end_date||""}</td><td class="f">${(r.flags||[]).join("<br>")}</td></tr>`).join("");
+const ins=d.insolvencies_real_estate||[];
+document.getElementById("ins").innerHTML=ins.length?ins.map(r=>`<tr><td>${r.pub_date}</td><td><a href="${r.url}" target="_blank" rel="noopener">${r.company}</a></td><td>${r.act}</td><td>${r.court_or_prov}</td></tr>`).join(""):'<tr><td colspan="4" class="muted">None in the latest bulletin.</td></tr>';
+}).catch(()=>{document.getElementById("st").textContent="No data yet. Run the daily-pull workflow once from the Actions tab."});
+</script></body></html>

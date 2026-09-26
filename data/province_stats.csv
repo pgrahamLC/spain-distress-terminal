@@ -1,0 +1,51 @@
+province,region,closed,active,ratio_median,ratio_n,median_bid
+Barcelona,Cataluña,2221,68,53.8,591,85585
+Alicante,C. Valenciana,1834,41,70,569,65499
+Madrid,Madrid,1640,9,72.2,682,122415
+Murcia,Murcia,1307,30,55.7,248,54667
+Valencia,C. Valenciana,1255,103,70.2,456,78925
+Málaga,Andalucía,969,6,58.7,451,93240
+Almería,Andalucía,832,7,41.6,331,12582
+Tarragona,Cataluña,803,9,50,271,69631
+Sevilla,Andalucía,704,25,54,247,53962
+Girona,Cataluña,563,6,46.9,152,72248
+Granada,Andalucía,533,9,60,207,44400
+Cádiz,Andalucía,489,34,53.5,139,68586
+Asturias,Asturias,483,30,78.6,225,46872
+Castellón,C. Valenciana,479,5,61.9,157,54683
+Toledo,Castilla-La Mancha,372,11,31.1,182,28660
+Jaén,Andalucía,371,10,53.3,115,37875
+Baleares,Baleares,365,15,79.1,186,117600
+Santa Cruz de Tenerife,Canarias,360,19,78.4,207,75087
+Lleida,Cataluña,359,27,50,152,20448
+Córdoba,Andalucía,342,16,52.2,82,47239
+Las Palmas,Canarias,339,16,60.9,136,87936
+A Coruña,Galicia,333,6,68,150,56437
+León,Castilla y León,314,18,63.6,117,21445
+Huelva,Andalucía,310,1,42.8,155,20134
+Badajoz,Extremadura,307,29,54.4,103,42256
+Zaragoza,Aragón,298,58,50,97,67656
+Cantabria,Cantabria,272,14,54,136,36347
+Ciudad Real,Castilla-La Mancha,266,20,54.8,130,24469
+Bizkaia,País Vasco,255,117,73.4,55,95010
+La Rioja,La Rioja,252,3,57.6,120,10896
+Pontevedra,Galicia,242,3,75.9,98,80000
+Valladolid,Castilla y León,225,1,61.8,96,41877
+Navarra,Navarra,186,4,65.7,96,49109
+Albacete,Castilla-La Mancha,185,8,53.2,61,49526
+Burgos,Castilla y León,167,4,53.2,113,23000
+Salamanca,Castilla y León,164,37,71.6,75,31069
+Guadalajara,Castilla-La Mancha,150,1,46.3,69,18955
+Segovia,Castilla y León,149,0,53,88,18684
+Cáceres,Extremadura,145,6,47.5,52,34028
+Huesca,Aragón,137,0,50.7,60,15739
+Gipuzkoa,País Vasco,119,1,72,29,128170
+Zamora,Castilla y León,108,1,53,38,30900
+Ávila,Castilla y León,92,4,63.8,24,66863
+Álava,País Vasco,90,2,67.2,23,106926
+Palencia,Castilla y León,86,1,61.5,60,16312
+Lugo,Galicia,84,4,72,33,55669
+Cuenca,Castilla-La Mancha,71,13,50,41,14283
+Ourense,Galicia,64,0,48.7,26,48792
+Soria,Castilla y León,56,0,47.7,33,6360
+Teruel,Aragón,50,0,58.1,33,9396

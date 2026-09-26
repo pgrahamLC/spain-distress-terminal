@@ -1,0 +1,7 @@
+{"consulta_dnprcResult": {"control": {"cudnp": 1, "cucons": 2, "cucul": 0},
+ "bico": {"bi": {"idbi": {"cn": "UR", "rc": {"pc1": "1074311", "pc2": "CF4517C", "car": "0009", "cc1": "E", "cc2": "H"}},
+   "ldt": "CL BALDOMER GALOFRE 6 Pl:03 Pt:A 43205 REUS (TARRAGONA)",
+   "debi": {"luso": "Residencial", "sfc": "70", "cpt": "1,234000", "ant": "1960"}},
+  "lcons": [
+   {"lcd": "VIVIENDA", "dt": {"lourb": {"loint": {"es": "1", "pt": "03", "pu": "A"}}}, "dfcons": {"stl": "63"}},
+   {"lcd": "ELEMENTOS COMUNES", "dfcons": {"stl": "7"}}]}}}

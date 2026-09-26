@@ -1,0 +1,38 @@
+name: daily-pull
+on:
+  schedule:
+    - cron: "40 7 * * 1-6"   # 07:40 UTC Mon–Sat, after the BOE and BORME publish
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: { group: pages, cancel-in-progress: false }
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.deploy.outputs.page_url }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+      - run: python pipeline.py
+        env:
+          AUCTION_FEED_URL: ${{ secrets.AUCTION_FEED_URL }}
+          AUCTION_FEED_KEY: ${{ secrets.AUCTION_FEED_KEY }}
+      - name: Commit refreshed data
+        run: |
+          git config user.name "daily-pull"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/latest.json data/spain_distress.db
+          git diff --cached --quiet || git commit -m "Daily pull $(date -u +%F)"
+          git push
+      - name: Build static site
+        run: mkdir -p site && cp webapp/index.html site/ && cp data/latest.json site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+      - id: deploy
+        uses: actions/deploy-pages@v4
