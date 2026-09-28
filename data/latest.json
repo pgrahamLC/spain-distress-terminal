@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-26T19:23:33",
- "bulletin_date": "2026-09-26",
+ "generated": "2026-09-28T15:56:12",
+ "bulletin_date": "2026-09-28",
  "lots": [
   {
    "boe_id": "SUB-JA-2026-264436",
@@ -297,6 +297,6 @@
   }
  ],
  "insolvencies_real_estate": [],
- "insolvencies_total": 2,
+ "insolvencies_total": 3,
  "errors": []
 }
