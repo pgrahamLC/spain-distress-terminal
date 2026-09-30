@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-29T14:20:40",
- "bulletin_date": "2026-09-29",
+ "generated": "2026-09-30T14:13:48",
+ "bulletin_date": "2026-09-30",
  "lots": [
   {
    "boe_id": "SUB-JA-2026-264436",
@@ -118,8 +118,6 @@
    "end_date": "2026-10-15",
    "source": "subastable",
    "source_url": "https://subastable.com/subasta/10439-vivienda-en-granada/",
-   "year_built": 1970,
-   "use": "Residencial",
    "area": "",
    "market_value": 199149,
    "market_basis": "asking 2685 €/m² (idealista, 2026-08)",
@@ -298,5 +296,7 @@
  ],
  "insolvencies_real_estate": [],
  "insolvencies_total": 0,
- "errors": []
+ "errors": [
+  "catastro SUB-JA-2026-264104: Server disconnected without sending a response."
+ ]
 }
