@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-30T14:13:48",
- "bulletin_date": "2026-09-30",
+ "generated": "2026-10-01T14:46:05",
+ "bulletin_date": "2026-10-01",
  "lots": [
   {
    "boe_id": "SUB-JA-2026-264436",
@@ -295,7 +295,7 @@
   }
  ],
  "insolvencies_real_estate": [],
- "insolvencies_total": 0,
+ "insolvencies_total": 2,
  "errors": [
   "catastro SUB-JA-2026-264104: Server disconnected without sending a response."
  ]
