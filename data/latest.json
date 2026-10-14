@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-13T15:15:50",
- "bulletin_date": "2026-10-13",
+ "generated": "2026-10-14T13:04:36",
+ "bulletin_date": "2026-10-14",
  "lots": [
   {
    "boe_id": "SUB-JA-2026-264436",
@@ -296,7 +296,18 @@
    ]
   }
  ],
- "insolvencies_real_estate": [],
- "insolvencies_total": 0,
+ "insolvencies_real_estate": [
+  {
+   "id": "BORME-C-2026-5424",
+   "pub_date": "2026-10-14",
+   "company": "URBANIZADORA GADE, S.A",
+   "act": "liquidación",
+   "court_or_prov": "001",
+   "is_real_estate": 1,
+   "title": "URBANIZADORA GADE, S.A. EN LIQUIDACIÓN",
+   "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2026-5424"
+  }
+ ],
+ "insolvencies_total": 1,
  "errors": []
 }
