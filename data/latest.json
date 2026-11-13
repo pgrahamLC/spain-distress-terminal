@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-12T16:13:12",
- "bulletin_date": "2026-11-12",
+ "generated": "2026-11-13T15:41:10",
+ "bulletin_date": "2026-11-13",
  "lots": [
   {
    "boe_id": "SUB-JA-2026-264436",
@@ -118,6 +118,8 @@
    "end_date": "2026-10-15",
    "source": "subastable",
    "source_url": "https://subastable.com/subasta/10439-vivienda-en-granada/",
+   "year_built": 1970,
+   "use": "Residencial",
    "area": "",
    "market_value": 199149,
    "market_basis": "asking 2685 €/m² (idealista, 2026-08)",
@@ -294,10 +296,18 @@
    ]
   }
  ],
- "insolvencies_real_estate": [],
- "insolvencies_total": 1,
- "errors": [
-  "catastro SUB-JA-2026-265483: Server disconnected without sending a response.",
-  "catastro SUB-JA-2026-264104: Server disconnected without sending a response."
- ]
+ "insolvencies_real_estate": [
+  {
+   "id": "BORME-C-2026-6003",
+   "pub_date": "2026-11-13",
+   "company": "PROMOCIÓNES EL CARRASCAL DE TALAVERA, S.A",
+   "act": "liquidación",
+   "court_or_prov": "002",
+   "is_real_estate": 1,
+   "title": "PROMOCIÓNES EL CARRASCAL DE TALAVERA, S.A. SOCIEDAD EN LIQUIDACIÓN.",
+   "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2026-6003"
+  }
+ ],
+ "insolvencies_total": 3,
+ "errors": []
 }
