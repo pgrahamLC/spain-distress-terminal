@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-13T15:41:10",
- "bulletin_date": "2026-11-13",
+ "generated": "2026-11-14T14:29:54",
+ "bulletin_date": "2026-11-14",
  "lots": [
   {
    "boe_id": "SUB-JA-2026-264436",
@@ -296,18 +296,7 @@
    ]
   }
  ],
- "insolvencies_real_estate": [
-  {
-   "id": "BORME-C-2026-6003",
-   "pub_date": "2026-11-13",
-   "company": "PROMOCIÓNES EL CARRASCAL DE TALAVERA, S.A",
-   "act": "liquidación",
-   "court_or_prov": "002",
-   "is_real_estate": 1,
-   "title": "PROMOCIÓNES EL CARRASCAL DE TALAVERA, S.A. SOCIEDAD EN LIQUIDACIÓN.",
-   "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2026-6003"
-  }
- ],
+ "insolvencies_real_estate": [],
  "insolvencies_total": 3,
  "errors": []
 }
